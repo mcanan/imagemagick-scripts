@@ -1,7 +1,14 @@
 #!/bin/bash
 display_usage() { 
-	echo -e "\nUsage:\n$0 source_files_dir output_file.jpg\n" 
-	echo -e "Example:\n$0 \\\tmp \\\tmp\\\stars_trail.jpg\n" 
+cat <<EOF
+
+Usage: 
+$0 source_files_dir output_file.jpg 
+
+Example:
+$0 \tmp \tmp\stars_trail.jpg 
+
+EOF
 } 
 
 if [ $# -ne 2 ]; then 

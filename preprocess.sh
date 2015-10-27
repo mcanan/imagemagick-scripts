@@ -1,8 +1,14 @@
 #!/bin/bash
 display_usage() { 
-	echo -e "\nUsage:\n$0 source_files_dir target_dir operation\n" 
-	echo -e "Valid operations: resize, normalize \n" 
-	echo -e "Example:\n$0 \\\tmp\\\input \\\tmp\\\output normalize\n" 
+cat <<EOF
+
+Usage: 
+$0 source_files_dir target_dir operation
+
+Example:
+$0 \tmp\input \tmp\output normalize
+
+EOF
 } 
 
 if [ $# -ne 3 ]; then 
