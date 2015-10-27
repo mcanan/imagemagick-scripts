@@ -20,7 +20,7 @@ fi
 
 rm -f "$OUTPUT_FILE"
 
-for FILE in $SOURCE_FILES_DIR/*.JPG
+for FILE in $SOURCE_FILES_DIR/*.{jpg,JPG,png,PNG,jpeg,JPEG}
 do
 	if [ ! -f "$OUTPUT_FILE" ]; then
 		cp "$FILE" "$OUTPUT_FILE"

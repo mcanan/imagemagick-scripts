@@ -1,8 +1,8 @@
 #!/bin/bash
 
 display_usage() { 
-	echo -e "\nUsage:\n$0 source_files_dir output_file.jpg\n" 
-	echo -e "Example:\n$0 \\\tmp \\\tmp\\\stars_trail.jpg\n" 
+	echo -e "\nUsage:\n$0 output_file.jpg\n" 
+	echo -e "Example:\n$0 output.mp4\n" 
 } 
 
 if [ $# -ne 1 ]; then 
@@ -12,5 +12,5 @@ fi
 
 OUTPUT_FILE="$3"
 
-/usr/local/bin/ffmpeg -i %*.JPG -c:v libx264 -pix_fmt yuv420p "$OUTPUT_FILE"
+/usr/local/bin/ffmpeg -i %*.jpg -c:v libx264 -pix_fmt yuv420p "$OUTPUT_FILE"
 
