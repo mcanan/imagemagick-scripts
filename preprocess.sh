@@ -1,7 +1,7 @@
 #!/bin/bash
 display_usage() { 
 	echo -e "\nUsage:\n$0 source_files_dir output_dir\n" 
-	echo -e "Example:\n$0 \\\tmp \\\tmp\\\output\\ \n" 
+	echo -e "Example:\n$0 /tmp /tmp/output/ \n" 
 } 
 
 if [ $# -ne 3 ]; then 
