@@ -2,9 +2,9 @@
 
 ## Scripts
 
-### starstrail.sh
+### startrails.sh
 
-From a sequence of images create a stars trail.
+From a sequence of images create a star trail.
 
 ###preprocess.sh
 
