@@ -4,7 +4,7 @@
 
 ### startrails.sh
 
-From a sequence of images create a star trail.
+Creates a star trail from a sequence of images.
 
 ###preprocess.sh
 
